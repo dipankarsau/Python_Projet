@@ -29,6 +29,7 @@ class Atm:
             self.withdrawl()
         else:
             print("Thank you for using ATM")
+            self.exit()
 
     def create_pin(self):
         user_pin = int(input("Enter your PIN: "))
@@ -76,6 +77,8 @@ class Atm:
             else:
                 print(" your balance is infulance")
                 self.menu()
+    def exit(self):
+        print(" please enter a valid number")
         
 
 
