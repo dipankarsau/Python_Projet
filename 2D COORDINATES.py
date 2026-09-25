@@ -20,6 +20,9 @@ class Line:
             return "lies on thye line"
         else: 
             return " does not lie on the line"
+    def shortest_distance(self,point):
+      return abs (self.a*point.x+self.b*point.y+self.c)/(self.a**2+self.b**2)
+
 
         
 
@@ -29,8 +32,10 @@ class Line:
 # print(p1)
 # print(p1.euclidean_distance(p2))
 # print(p1.distance_from_origin())
-l1=Line(3,4,5)
+# l1=Line(3,4,5)
+l1=Line(1,1,-2)
 l2=Point(1,1)
 print(l1)
 print(l2)
 print(l1.distance(l2))
+print(l1.shortest_distance(l2))
